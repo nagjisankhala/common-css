@@ -841,3 +841,46 @@ textarea.form-control {
 .menu-close::before {
     transform: rotate(-45deg);
 }
+.menu-toggle {
+        display: block;
+    }
+    .header-menu {
+        position: fixed;
+        top: 0;
+        right: -345px;
+        width: 345px;
+        height: 100vh;
+        min-height: 100vh;
+        background: var(--white-color);
+        transition: all 0.5s ease;
+        z-index: 9;
+        overflow: hidden scroll;
+    }
+    .header-menu.active {
+        right: 0;
+    }
+    .mobile-menu-top {
+        display: flex;
+    }
+    .overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+    .navbar ul {
+        display: block;
+        padding: 0 20px;
+    }
+    .navbar ul li+li {
+        margin-left: 0;
+    }
+    .navbar ul li a {
+        padding: 12px 0 12px 0 !important;
+        display: block;
+        border-bottom: 1px solid #707070;
+    }
+    .navbar ul li:last-child a {
+        margin-top: 24px;
+        border-bottom: none;
+        display: inline-block;
+        padding: 10px 15px !important;
+    }
